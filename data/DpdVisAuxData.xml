@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vis1:DpdVisAuxData xmlns:bas="http://euclid.esa.org/schema/bas"
+ xmlns:sgs="http://euclid.esa.org/schema/sys/sgs"
+ xmlns:sys="http://euclid.esa.org/schema/sys"
+ xmlns:vis="http://euclid.esa.org/schema/pro/vis"
+ xmlns:dss="http://euclid.esa.org/schema/sys/dss"
+ xmlns:ppr="http://euclid.esa.org/schema/bas/ppr"
+ xmlns:vis1="http://euclid.esa.org/schema/dpd/vis"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://euclid.esa.org/schema/dpd/vis file:/D:/TortoiseSvn/Euclid/EC/SGS/ST/4-2-05-DM/schema/tags/R-1.5.0/dpd/vis/euc-test-vis-AuxDataFiles.xsd">
+    <Header>
+        <ProductId>ProductId0</ProductId>
+        <ProductType>qName</ProductType>
+        <SoftwareName>SoftwareName0</SoftwareName>
+        <SoftwareRelease>Softwa</SoftwareRelease>
+        <PipelineRun>PipelineRun0</PipelineRun>
+        <ExitStatusCode>ExitStatusCode0</ExitStatusCode>
+        <DataModelVersion>DataMo</DataModelVersion>
+        <MinDataModelVersion>MinDat</MinDataModelVersion>
+        <ScientificCustodian>VIS</ScientificCustodian>
+        <AccessRights>
+            <EuclidConsortiumRead>false</EuclidConsortiumRead>
+            <EuclidConsortiumWrite>false</EuclidConsortiumWrite>
+            <ScientificGroupRead>false</ScientificGroupRead>
+            <ScientificGroupWrite>false</ScientificGroupWrite>
+        </AccessRights>
+        <Curator>
+        </Curator>
+        <Creator>EAS</Creator>
+        <CreationDate>2006-05-04T18:13:51.0</CreationDate>
+    </Header>
+    <Data>
+        <File filestatus="PROPOSED">
+            <FileName>FileName0</FileName>
+        </File>
+        <File filestatus="PROPOSED">
+            <FileName>FileName1</FileName>
+        </File>
+    </Data>
+</vis1:DpdVisAuxData>

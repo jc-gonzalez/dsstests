@@ -1,0 +1,47 @@
+<?xml version="1.0" ?><dpd-nir:DpdNirObjCatalog xmlns:bas="http://euclid.esa.org/schema/bas" xmlns:bas-dtd="http://euclid.esa.org/schema/bas/dtd" xmlns:bas-fit="http://euclid.esa.org/schema/bas/fit" xmlns:bas-img="http://euclid.esa.org/schema/bas/img" xmlns:bas-imp-stc="http://euclid.esa.org/schema/bas/imp/stc" xmlns:bas-ppr="http://euclid.esa.org/schema/bas/ppr" xmlns:dpd-nir="http://euclid.esa.org/schema/dpd/nir" xmlns:ins="http://euclid.esa.org/schema/ins" xmlns:pro-le1="http://euclid.esa.org/schema/pro/le1" xmlns:pro-le1-nisp="http://euclid.esa.org/schema/pro/le1/nisp" xmlns:pro-nir="http://euclid.esa.org/schema/pro/nir" xmlns:sys="http://euclid.esa.org/schema/sys" xmlns:sys-dss="http://euclid.esa.org/schema/sys/dss" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+ <Header>
+  <ProductId>37656820</ProductId>
+  <ProductType>nirObjCatalog</ProductType>
+  <SoftwareName>NirPipeline</SoftwareName>
+  <SoftwareRelease>1.0</SoftwareRelease>
+  <PipelineRun>EUC_NIR-PIPELINE-34064-H-SDC-IT-PPO-0012-RUN0-SC2_0.0-SDC-IT-RUN0-0</PipelineRun>
+  <ExitStatusCode>0</ExitStatusCode>
+  <DataModelVersion>1.2.2</DataModelVersion>
+  <MinDataModelVersion>1.2.2</MinDataModelVersion>
+  <ScientificCustodian>NIR</ScientificCustodian>
+  <AccessRights>
+   <EuclidConsortiumRead>true</EuclidConsortiumRead>
+   <EuclidConsortiumWrite>true</EuclidConsortiumWrite>
+   <ScientificGroupRead>true</ScientificGroupRead>
+   <ScientificGroupWrite>true</ScientificGroupWrite>
+  </AccessRights>
+  <Curator>
+   <Name>Fabiana Faustini</Name>
+   <Email>faustini@asdc.asi.it</Email>
+  </Curator>
+  <Creator>SDC-IT</Creator>
+  <CreationDate>2016-05-27T20:23:29.271Z</CreationDate>
+ </Header>
+ <Data>
+  <Instrument>
+   <InstrumentName>NISP-P H sim</InstrumentName>
+   <TelescopeName>EUCLID</TelescopeName>
+  </Instrument>
+  <ObservationDateTime>
+   <OBT>2016-04-26T12:11:52.000Z</OBT>
+   <UTC>2016-04-26T12:11:52.000Z</UTC>
+   <MJD>57504.0</MJD>
+  </ObservationDateTime>
+  <ReconsFPAPointing type="Center">
+   <RA>7.25002874201</RA>
+   <Dec>-18.9292033724</Dec>
+   <Orientation>-114.728861064</Orientation>
+  </ReconsFPAPointing>
+  <FilterWheelPos>H</FilterWheelPos>
+  <CatalogFitsFile format="nir.nirObjCatalog" version="0.1">
+   <DataContainer filestatus="PROPOSED">
+    <FileName>DpdNirObjCatalog100rows2.fits</FileName>
+   </DataContainer>
+  </CatalogFitsFile>
+ </Data>
+</dpd-nir:DpdNirObjCatalog>

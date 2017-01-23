@@ -1,0 +1,30 @@
+<?xml version="1.0" ?><nir1:DpdNirConfigurationSet xmlns:bas="http://euclid.esa.org/schema/bas" xmlns:cat="http://euclid.esa.org/schema/bas/cat" xmlns:cot="http://euclid.esa.org/schema/bas/cot" xmlns:dqc="http://euclid.esa.org/schema/bas/dqc" xmlns:dss="http://euclid.esa.org/schema/sys/dss" xmlns:dtd="http://euclid.esa.org/schema/bas/dtd" xmlns:eso="http://euclid.esa.org/schema/bas/imp/eso" xmlns:fit="http://euclid.esa.org/schema/bas/fit" xmlns:fits="http://euclid.esa.org/schema/bas/imp/fits" xmlns:img="http://euclid.esa.org/schema/bas/img" xmlns:imp="http://euclid.esa.org/schema/bas/imp" xmlns:ins="http://euclid.esa.org/schema/ins" xmlns:le1="http://euclid.esa.org/schema/pro/le1" xmlns:le1nisp="http://euclid.esa.org/schema/pro/le1/nisp" xmlns:mat="http://euclid.esa.org/schema/bas/mat" xmlns:mdb="http://euclid.esa.org/schema/sys/mdb" xmlns:met="http://euclid.esa.org/schema/bas/ppr/met" xmlns:nir="http://euclid.esa.org/schema/pro/nir" xmlns:nir1="http://euclid.esa.org/schema/dpd/nir" xmlns:nis="http://euclid.esa.org/schema/ins/nis" xmlns:ppr="http://euclid.esa.org/schema/bas/ppr" xmlns:sgs="http://euclid.esa.org/schema/sys/sgs" xmlns:spm="http://euclid.esa.org/schema/bas/spm" xmlns:stc="http://euclid.esa.org/schema/bas/imp/stc" xmlns:sys="http://euclid.esa.org/schema/sys" xmlns:utd="http://euclid.esa.org/schema/bas/utd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://euclid.esa.org/schema/dpd/nir file:/D:/TortoiseSvn/Euclid/EC/SGS/ST/4-2-05-DM/schema/tags/R-1.5.0/dpd/nir/euc-test-nir-ConfigurationSet.xsd">
+    <Header>
+        <ProductId>1475240772.23</ProductId>
+        <ProductType>qName</ProductType>
+        <SoftwareName>SoftwareName0</SoftwareName>
+        <SoftwareRelease>Softwa</SoftwareRelease>
+        <PipelineRun>PipelineRun0</PipelineRun>
+        <ExitStatusCode>ExitStatusCode0</ExitStatusCode>
+        <DataModelVersion>DataMo</DataModelVersion>
+        <MinDataModelVersion>MinDat</MinDataModelVersion>
+        <ScientificCustodian>VIS</ScientificCustodian>
+        <AccessRights>
+            <EuclidConsortiumRead>false</EuclidConsortiumRead>
+            <EuclidConsortiumWrite>false</EuclidConsortiumWrite>
+            <ScientificGroupRead>false</ScientificGroupRead>
+            <ScientificGroupWrite>false</ScientificGroupWrite>
+        </AccessRights>
+        <Curator>
+        </Curator>
+        <Creator>EAS</Creator>
+        <CreationDate>2006-05-04T18:13:51.0</CreationDate>
+    </Header>
+    <Data>
+        <ConfigurationFile>
+            <DataContainer filestatus="PROPOSED">
+                <FileName>DpdNipOutputConfigurationSet.fits</FileName>
+            </DataContainer>
+        </ConfigurationFile>
+    </Data>
+</nir1:DpdNirConfigurationSet>

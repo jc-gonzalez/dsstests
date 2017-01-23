@@ -1,0 +1,20 @@
+<?xml version="1.0" ?><sys-orc:PipelineProcessingOrder xmlns:sys="http://euclid.esa.org/schema/sys" xmlns:sys-dss="http://euclid.esa.org/schema/sys/dss" xmlns:sys-ial="http://euclid.esa.org/schema/sys/ial" xmlns:sys-orc="http://euclid.esa.org/schema/sys/orc" xmlns:sys-sgs="http://euclid.esa.org/schema/sys/sgs" xmlns:sys-tsk="http://euclid.esa.org/schema/sys/tsk" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+ <Id>1479398642.66</Id>
+ <ParentPlanId>Test_EAS</ParentPlanId>
+ <TargetSdc>SDC-FR</TargetSdc>
+ <PipelineDefinitionId>EUC_NIR-PIPELINE-SC2_0.1.0</PipelineDefinitionId>
+ <SdcConfigurationId>SdcConfig-SDC-IT-160512-182405-560</SdcConfigurationId>
+ <InputProducts>
+  <Id>EUC_NIR-INPUT-11728-Y-SDC-IT-PPO-0001-RUN0-SC2_0.0</Id>
+  <Product>
+   <Id>EUC_SIM_NIP_FIELD-34064-DITHER-3_20160427T020335.963Z_01.00-PRODUCT-SC2_0.0</Id>
+   <PortName>dither3</PortName>
+   <ProductType>DpdNirOutput</ProductType>
+   <ProductId>EUC_SIM_NIP_FIELD-34064-DITHER-3_20160427T020335.963Z_01.00</ProductId>
+  </Product>
+
+ </InputProducts>
+ <ProcessingState>SCHEDULED</ProcessingState>
+ <StartTime>2016-05-12T06:24:29.434Z</StartTime>
+ <EndTime>2016-05-12T06:25:08.789Z</EndTime>
+</sys-orc:PipelineProcessingOrder>

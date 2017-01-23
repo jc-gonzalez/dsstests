@@ -1,0 +1,1512 @@
+<?xml version="1.0" ?><dpd-sim:DpdVisOutput xmlns:bas="http://euclid.esa.org/schema/bas" xmlns:bas-dtd="http://euclid.esa.org/schema/bas/dtd" xmlns:bas-fit="http://euclid.esa.org/schema/bas/fit" xmlns:bas-img="http://euclid.esa.org/schema/bas/img" xmlns:bas-imp-eso="http://euclid.esa.org/schema/bas/imp/eso" xmlns:bas-imp-fits="http://euclid.esa.org/schema/bas/imp/fits" xmlns:bas-imp-stc="http://euclid.esa.org/schema/bas/imp/stc" xmlns:bas-ppr="http://euclid.esa.org/schema/bas/ppr" xmlns:bas-utd="http://euclid.esa.org/schema/bas/utd" xmlns:dpd-sim="http://euclid.esa.org/schema/dpd/sim" xmlns:ins="http://euclid.esa.org/schema/ins" xmlns:pro-le1="http://euclid.esa.org/schema/pro/le1" xmlns:pro-le1-vis="http://euclid.esa.org/schema/pro/le1/vis" xmlns:pro-sim-vis="http://euclid.esa.org/schema/pro/sim/vis" xmlns:sys="http://euclid.esa.org/schema/sys" xmlns:sys-dss="http://euclid.esa.org/schema/sys/dss" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+ <Header>
+  <ProductId>35746387</ProductId>
+  <ProductType>EUC_SIM_VIS</ProductType>
+  <SoftwareName>EuclidSIM</SoftwareName>
+  <SoftwareRelease>3.0</SoftwareRelease>
+  <PipelineRun>0</PipelineRun>
+  <ExitStatusCode>0</ExitStatusCode>
+  <DataModelVersion>1.5.0</DataModelVersion>
+  <MinDataModelVersion>1.5.0</MinDataModelVersion>
+  <ScientificCustodian>SIM</ScientificCustodian>
+  <AccessRights>
+   <EuclidConsortiumRead>true</EuclidConsortiumRead>
+   <EuclidConsortiumWrite>false</EuclidConsortiumWrite>
+   <ScientificGroupRead>true</ScientificGroupRead>
+   <ScientificGroupWrite>true</ScientificGroupWrite>
+  </AccessRights>
+  <Curator>
+   <Name>Eric Jullo</Name>
+   <Email>eric.jullo@lam.fr</Email>
+  </Curator>
+  <Creator>LOCAL</Creator>
+  <CreationDate>2016-04-25T13:49:52.365Z</CreationDate>
+ </Header>
+ <Data>
+  <ExposureTime>
+   <Value>565.0</Value>
+   <Unit>s</Unit>
+  </ExposureTime>
+  <ImgType>
+   <Category>SCIENCE</Category>
+   <FirstType>OBJECT</FirstType>
+   <SecondType>SKY</SecondType>
+   <ThirdType>WIDE</ThirdType>
+   <Technique>IMAGE</Technique>
+  </ImgType>
+  <ImgArea>
+   <Name>QUADRANT</Name>
+  </ImgArea>
+  <ImgNumber>144</ImgNumber>
+  <AxisNumber>2</AxisNumber>
+  <AxisLengths>2048 2048</AxisLengths>
+  <DataSize>16</DataSize>
+  <DataLength>4194304</DataLength>
+  <Instrument>
+   <InstrumentName>VIS</InstrumentName>
+   <TelescopeName>EUCLID</TelescopeName>
+  </Instrument>
+  <ObservationDateTime>
+   <OBT>2024-12-22T05:03:23.000Z</OBT>
+   <UTC>2024-12-22T05:03:23.000Z</UTC>
+   <MJD>9122.21147</MJD>
+  </ObservationDateTime>
+  <ObservationSequence>
+   <FieldId>34080</FieldId>
+   <ObservationId>0</ObservationId>
+   <DitherObservation>3</DitherObservation>
+   <Exposure>1</Exposure>
+   <TotSequence>1</TotSequence>
+  </ObservationSequence>
+  <InstrumentMode>Science</InstrumentMode>
+  <ObservationMode>WIDE_SURVEY</ObservationMode>
+  <CompressionAlgorithm>CCSDS121</CompressionAlgorithm>
+  <FrameChecksum>
+   <Algorithm>MD5</Algorithm>
+   <Value>c23364da9f8cd6ac9d7b8ae14f217a88</Value>
+  </FrameChecksum>
+  <CommandedFPAPointing type="Center">
+   <RA>7.55033321257</RA>
+   <Dec>-17.9363410459</Dec>
+   <Orientation>-114.549823116</Orientation>
+  </CommandedFPAPointing>
+  <ReconsFPAPointing type="Center">
+   <RA>7.55033321257</RA>
+   <Dec>-17.9363410459</Dec>
+   <Orientation>-114.549823116</Orientation>
+  </ReconsFPAPointing>
+  <Readout>
+   <ReadoutModeMethod>NominalScience</ReadoutModeMethod>
+   <StartTime>2021-01-11T03:13:13.000Z</StartTime>
+   <ParallelRegFrequency>0.0</ParallelRegFrequency>
+   <SerialRegFrequency>0.0</SerialRegFrequency>
+  </Readout>
+  <ShutterUnit>
+   <Status>OPENED</Status>
+  </ShutterUnit>
+  <CalibUnit>
+   <Status>false</Status>
+  </CalibUnit>
+  <ChargedInduced>
+   <Status>false</Status>
+   <IntensityLevel>0.0</IntensityLevel>
+  </ChargedInduced>
+  <DetectorList>
+   <Detectors>
+    <ChipID>0</ChipID>
+    <Gain>3.1</Gain>
+    <ReadoutNoise>4.36987511</ReadoutNoise>
+    <QuadrantList>
+     <Quadrant>
+      <QuadrantId>0</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>1</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>2</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>3</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+    </QuadrantList>
+   </Detectors>
+   <Detectors>
+    <ChipID>1</ChipID>
+    <Gain>3.1</Gain>
+    <ReadoutNoise>4.5</ReadoutNoise>
+    <QuadrantList>
+     <Quadrant>
+      <QuadrantId>0</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>1</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>2</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>3</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+    </QuadrantList>
+   </Detectors>
+   <Detectors>
+    <ChipID>2</ChipID>
+    <Gain>3.1</Gain>
+    <ReadoutNoise>4.5</ReadoutNoise>
+    <QuadrantList>
+     <Quadrant>
+      <QuadrantId>0</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>1</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>2</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>3</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+    </QuadrantList>
+   </Detectors>
+   <Detectors>
+    <ChipID>3</ChipID>
+    <Gain>3.1</Gain>
+    <ReadoutNoise>4.5</ReadoutNoise>
+    <QuadrantList>
+     <Quadrant>
+      <QuadrantId>0</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>1</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>2</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>3</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+    </QuadrantList>
+   </Detectors>
+   <Detectors>
+    <ChipID>4</ChipID>
+    <Gain>3.1</Gain>
+    <ReadoutNoise>4.5</ReadoutNoise>
+    <QuadrantList>
+     <Quadrant>
+      <QuadrantId>0</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>1</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>2</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>3</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+    </QuadrantList>
+   </Detectors>
+   <Detectors>
+    <ChipID>5</ChipID>
+    <Gain>3.1</Gain>
+    <ReadoutNoise>4.5</ReadoutNoise>
+    <QuadrantList>
+     <Quadrant>
+      <QuadrantId>0</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>1</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>2</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>3</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+    </QuadrantList>
+   </Detectors>
+   <Detectors>
+    <ChipID>6</ChipID>
+    <Gain>3.1</Gain>
+    <ReadoutNoise>4.5</ReadoutNoise>
+    <QuadrantList>
+     <Quadrant>
+      <QuadrantId>0</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>1</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>2</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>3</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+    </QuadrantList>
+   </Detectors>
+   <Detectors>
+    <ChipID>7</ChipID>
+    <Gain>3.1</Gain>
+    <ReadoutNoise>4.5</ReadoutNoise>
+    <QuadrantList>
+     <Quadrant>
+      <QuadrantId>0</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>1</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>2</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>3</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+    </QuadrantList>
+   </Detectors>
+   <Detectors>
+    <ChipID>8</ChipID>
+    <Gain>3.1</Gain>
+    <ReadoutNoise>4.5</ReadoutNoise>
+    <QuadrantList>
+     <Quadrant>
+      <QuadrantId>0</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>1</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>2</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>3</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+    </QuadrantList>
+   </Detectors>
+   <Detectors>
+    <ChipID>9</ChipID>
+    <Gain>3.1</Gain>
+    <ReadoutNoise>4.5</ReadoutNoise>
+    <QuadrantList>
+     <Quadrant>
+      <QuadrantId>0</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>1</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>2</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>3</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+    </QuadrantList>
+   </Detectors>
+   <Detectors>
+    <ChipID>10</ChipID>
+    <Gain>3.1</Gain>
+    <ReadoutNoise>4.5</ReadoutNoise>
+    <QuadrantList>
+     <Quadrant>
+      <QuadrantId>0</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>1</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>2</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>3</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+    </QuadrantList>
+   </Detectors>
+   <Detectors>
+    <ChipID>11</ChipID>
+    <Gain>3.1</Gain>
+    <ReadoutNoise>4.5</ReadoutNoise>
+    <QuadrantList>
+     <Quadrant>
+      <QuadrantId>0</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>1</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>2</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>3</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+    </QuadrantList>
+   </Detectors>
+   <Detectors>
+    <ChipID>12</ChipID>
+    <Gain>3.1</Gain>
+    <ReadoutNoise>4.5</ReadoutNoise>
+    <QuadrantList>
+     <Quadrant>
+      <QuadrantId>0</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>1</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>2</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>3</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+    </QuadrantList>
+   </Detectors>
+   <Detectors>
+    <ChipID>13</ChipID>
+    <Gain>3.1</Gain>
+    <ReadoutNoise>4.5</ReadoutNoise>
+    <QuadrantList>
+     <Quadrant>
+      <QuadrantId>0</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>1</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>2</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>3</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+    </QuadrantList>
+   </Detectors>
+   <Detectors>
+    <ChipID>14</ChipID>
+    <Gain>3.1</Gain>
+    <ReadoutNoise>4.5</ReadoutNoise>
+    <QuadrantList>
+     <Quadrant>
+      <QuadrantId>0</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>1</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>2</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>3</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+    </QuadrantList>
+   </Detectors>
+   <Detectors>
+    <ChipID>15</ChipID>
+    <Gain>3.1</Gain>
+    <ReadoutNoise>4.5</ReadoutNoise>
+    <QuadrantList>
+     <Quadrant>
+      <QuadrantId>0</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>1</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>2</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>3</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+    </QuadrantList>
+   </Detectors>
+   <Detectors>
+    <ChipID>16</ChipID>
+    <Gain>3.1</Gain>
+    <ReadoutNoise>4.5</ReadoutNoise>
+    <QuadrantList>
+     <Quadrant>
+      <QuadrantId>0</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>1</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>2</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>3</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+    </QuadrantList>
+   </Detectors>
+   <Detectors>
+    <ChipID>17</ChipID>
+    <Gain>3.1</Gain>
+    <ReadoutNoise>4.5</ReadoutNoise>
+    <QuadrantList>
+     <Quadrant>
+      <QuadrantId>0</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>1</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>2</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>3</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+    </QuadrantList>
+   </Detectors>
+   <Detectors>
+    <ChipID>18</ChipID>
+    <Gain>3.1</Gain>
+    <ReadoutNoise>4.5</ReadoutNoise>
+    <QuadrantList>
+     <Quadrant>
+      <QuadrantId>0</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>1</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>2</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>3</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+    </QuadrantList>
+   </Detectors>
+   <Detectors>
+    <ChipID>19</ChipID>
+    <Gain>3.1</Gain>
+    <ReadoutNoise>4.5</ReadoutNoise>
+    <QuadrantList>
+     <Quadrant>
+      <QuadrantId>0</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>1</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>2</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>3</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+    </QuadrantList>
+   </Detectors>
+   <Detectors>
+    <ChipID>20</ChipID>
+    <Gain>3.1</Gain>
+    <ReadoutNoise>4.5</ReadoutNoise>
+    <QuadrantList>
+     <Quadrant>
+      <QuadrantId>0</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>1</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>2</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>3</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+    </QuadrantList>
+   </Detectors>
+   <Detectors>
+    <ChipID>21</ChipID>
+    <Gain>3.1</Gain>
+    <ReadoutNoise>4.5</ReadoutNoise>
+    <QuadrantList>
+     <Quadrant>
+      <QuadrantId>0</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>1</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>2</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>3</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+    </QuadrantList>
+   </Detectors>
+   <Detectors>
+    <ChipID>22</ChipID>
+    <Gain>3.1</Gain>
+    <ReadoutNoise>4.5</ReadoutNoise>
+    <QuadrantList>
+     <Quadrant>
+      <QuadrantId>0</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>1</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>2</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>3</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+    </QuadrantList>
+   </Detectors>
+   <Detectors>
+    <ChipID>23</ChipID>
+    <Gain>3.1</Gain>
+    <ReadoutNoise>4.5</ReadoutNoise>
+    <QuadrantList>
+     <Quadrant>
+      <QuadrantId>0</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>1</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>2</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>3</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+    </QuadrantList>
+   </Detectors>
+   <Detectors>
+    <ChipID>24</ChipID>
+    <Gain>3.1</Gain>
+    <ReadoutNoise>4.5</ReadoutNoise>
+    <QuadrantList>
+     <Quadrant>
+      <QuadrantId>0</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>1</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>2</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>3</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+    </QuadrantList>
+   </Detectors>
+   <Detectors>
+    <ChipID>25</ChipID>
+    <Gain>3.1</Gain>
+    <ReadoutNoise>4.5</ReadoutNoise>
+    <QuadrantList>
+     <Quadrant>
+      <QuadrantId>0</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>1</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>2</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>3</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+    </QuadrantList>
+   </Detectors>
+   <Detectors>
+    <ChipID>26</ChipID>
+    <Gain>3.1</Gain>
+    <ReadoutNoise>4.5</ReadoutNoise>
+    <QuadrantList>
+     <Quadrant>
+      <QuadrantId>0</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>1</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>2</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>3</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+    </QuadrantList>
+   </Detectors>
+   <Detectors>
+    <ChipID>27</ChipID>
+    <Gain>3.1</Gain>
+    <ReadoutNoise>4.5</ReadoutNoise>
+    <QuadrantList>
+     <Quadrant>
+      <QuadrantId>0</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>1</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>2</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>3</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+    </QuadrantList>
+   </Detectors>
+   <Detectors>
+    <ChipID>28</ChipID>
+    <Gain>3.1</Gain>
+    <ReadoutNoise>4.5</ReadoutNoise>
+    <QuadrantList>
+     <Quadrant>
+      <QuadrantId>0</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>1</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>2</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>3</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+    </QuadrantList>
+   </Detectors>
+   <Detectors>
+    <ChipID>29</ChipID>
+    <Gain>3.1</Gain>
+    <ReadoutNoise>4.5</ReadoutNoise>
+    <QuadrantList>
+     <Quadrant>
+      <QuadrantId>0</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>1</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>2</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>3</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+    </QuadrantList>
+   </Detectors>
+   <Detectors>
+    <ChipID>30</ChipID>
+    <Gain>3.1</Gain>
+    <ReadoutNoise>4.5</ReadoutNoise>
+    <QuadrantList>
+     <Quadrant>
+      <QuadrantId>0</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>1</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>2</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>3</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+    </QuadrantList>
+   </Detectors>
+   <Detectors>
+    <ChipID>31</ChipID>
+    <Gain>3.1</Gain>
+    <ReadoutNoise>4.5</ReadoutNoise>
+    <QuadrantList>
+     <Quadrant>
+      <QuadrantId>0</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>1</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>2</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>3</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+    </QuadrantList>
+   </Detectors>
+   <Detectors>
+    <ChipID>32</ChipID>
+    <Gain>3.1</Gain>
+    <ReadoutNoise>4.5</ReadoutNoise>
+    <QuadrantList>
+     <Quadrant>
+      <QuadrantId>0</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>1</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>2</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>3</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+    </QuadrantList>
+   </Detectors>
+   <Detectors>
+    <ChipID>33</ChipID>
+    <Gain>3.1</Gain>
+    <ReadoutNoise>4.5</ReadoutNoise>
+    <QuadrantList>
+     <Quadrant>
+      <QuadrantId>0</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>1</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>2</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>3</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+    </QuadrantList>
+   </Detectors>
+   <Detectors>
+    <ChipID>34</ChipID>
+    <Gain>3.1</Gain>
+    <ReadoutNoise>4.5</ReadoutNoise>
+    <QuadrantList>
+     <Quadrant>
+      <QuadrantId>0</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>1</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>2</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>3</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+    </QuadrantList>
+   </Detectors>
+   <Detectors>
+    <ChipID>35</ChipID>
+    <Gain>3.1</Gain>
+    <ReadoutNoise>4.5</ReadoutNoise>
+    <QuadrantList>
+     <Quadrant>
+      <QuadrantId>0</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>1</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>2</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+     <Quadrant>
+      <QuadrantId>3</QuadrantId>
+      <AxisNumber>2</AxisNumber>
+      <AxisLengths>2048 2048</AxisLengths>
+      <DataSize>16</DataSize>
+      <DataLength>4194304</DataLength>
+      <ReadoutNoise>4.5</ReadoutNoise>
+     </Quadrant>
+    </QuadrantList>
+   </Detectors>
+  </DetectorList>
+  <FrameFitsFile format="le1.visRawImage" version="0.1">
+   <DataContainer filestatus="PROPOSED">
+    <FileName>EUC_SIM_VIS_FIELD-34080-DITHER-3_20160425T134952.365Z_01.00.fits</FileName>
+   </DataContainer>
+  </FrameFitsFile>
+ </Data>
+ <Parameters>
+  <Param>
+   <Key>Release</Key>
+   <StringValue>SC2-VIS-R3</StringValue>
+  </Param>
+ </Parameters>
+</dpd-sim:DpdVisOutput>

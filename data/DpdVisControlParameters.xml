@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vis1:DpdControlParametersVIS xmlns:utd="http://euclid.esa.org/schema/bas/utd"
+ xmlns:spm="http://euclid.esa.org/schema/bas/spm"
+ xmlns:sys="http://euclid.esa.org/schema/sys"
+ xmlns:sgs="http://euclid.esa.org/schema/sys/sgs"
+ xmlns:ins="http://euclid.esa.org/schema/ins"
+ xmlns:fit="http://euclid.esa.org/schema/bas/fit"
+ xmlns:mat="http://euclid.esa.org/schema/bas/mat"
+ xmlns:dss="http://euclid.esa.org/schema/sys/dss"
+ xmlns:dtd="http://euclid.esa.org/schema/bas/dtd"
+ xmlns:img="http://euclid.esa.org/schema/bas/img"
+ xmlns:bas="http://euclid.esa.org/schema/bas"
+ xmlns:le1="http://euclid.esa.org/schema/pro/le1"
+ xmlns:le1vis="http://euclid.esa.org/schema/pro/le1/vis"
+ xmlns:nis="http://euclid.esa.org/schema/ins/nis"
+ xmlns:cat="http://euclid.esa.org/schema/bas/cat"
+ xmlns:cot="http://euclid.esa.org/schema/bas/cot"
+ xmlns:stc="http://euclid.esa.org/schema/bas/imp/stc"
+ xmlns:impfits="http://euclid.esa.org/schema/bas/imp/fits"
+ xmlns:eso="http://euclid.esa.org/schema/bas/imp/eso"
+ xmlns:dqc="http://euclid.esa.org/schema/bas/dqc"
+ xmlns:mdb="http://euclid.esa.org/schema/sys/mdb"
+ xmlns:imp="http://euclid.esa.org/schema/bas/imp"
+ xmlns:vis="http://euclid.esa.org/schema/pro/vis"
+ xmlns:ppr="http://euclid.esa.org/schema/bas/ppr"
+ xmlns:vis1="http://euclid.esa.org/schema/dpd/vis"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://euclid.esa.org/schema/dpd/vis file:/D:/TortoiseSvn/Euclid/EC/SGS/ST/4-2-05-DM/schema/tags/R-1.5.0/dpd/vis/euc-test-vis-ControlParameters.xsd">
+    <ModuleVis>
+        <Name>Name0</Name>
+        <ID>-1</ID>
+        <SoftwareVersion>0</SoftwareVersion>
+    </ModuleVis>
+</vis1:DpdControlParametersVIS>

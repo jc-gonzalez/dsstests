@@ -1,0 +1,9 @@
+SDC-CH https://pieclddss00.isdc.unige.ch:8443
+SDC-DE https://130.183.193.50:8443
+SDC-ES https://services.euclid.pic.es:8008
+SDC-FI https://86.50.169.30:443
+SDC-FR https://cceuclidial.in2p3.fr:8008
+SDC-IT https://140.105.72.210:443
+SDC-NL https://application11.target.rug.nl:18443
+SDC-UK https://euclid-dss.roe.ac.uk:443
+SDC-US https://134.4.53.225:443/

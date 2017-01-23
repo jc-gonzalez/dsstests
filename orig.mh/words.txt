@@ -1,0 +1,23 @@
+Euclid (c. 325 BC – 265 BC) – Greek Mathematician considered the “Father of Geometry”. His textbook ‘Elements’ remained a highly influential mathematics teaching book until the late 19th Century and is one of the mostly widely published books in the world. It has had a lasting influence on the sciences – especially mathematics. In a list by Michael H. Hast – Euclid is considered to be 14th most influential person in history.
+
+Euclid was born in the mid 4th Century BC and lived in Alexandria; he was mostly active during the reign of Ptolemy I (323-283BC) His name Euclid means “renowned, glorious” – he is also referred to as Euclid of Alexandria.
+
+Details about Euclid’s life are sparse – the main biographical information was not written until many centuries later, e.g. Proclus c. 450 AD. Proclus writes about Euclid:
+
+    “Not much younger than these [pupils of Plato] is Euclid, who put together the “Elements”, arranging in order many of Eudoxus’s theorems, perfecting many of Theaetetus’s, and also bringing to irrefutable demonstration the things which had been only loosely proved by his predecessors. This man lived in the time of the first Ptolemy; for Archimedes, who followed closely upon the first Ptolemy makes mention of Euclid, and further they say that Ptolemy once asked him if there were a shorted way to study geometry than the Elements, to which he replied that there was no royal road to geometry.”
+
+It is likely Euclid worked with a team of mathematics in Alexandria and he received a degrees of help in his mathematical works. Some historians feel the works of Euclid may have been the result of several authors, but most agree that one person – Euclid – was the principle author.
+
+It is likely that Euclid would have studied at Plato’s Academy in Athens and much of his initial knowledge would have come from this Plato perspective. In particular, Euclid would have learnt much geometry from Eudoxus.
+
+Another later historian – Pappus writes on Euclid (in 320 AD) that Euclid was of good character, stating – that Euclid was:
+
+    “.. most fair and well disposed towards all who were able in any measure to advance mathematics, careful in no way to give offence, and although an exact scholar not vaunting himself.”
+
+Although little is known for certain about Euclid’s personal life, his main book ‘The Elements’ (originally written in ancient Greek) became a standard work of important mathematical teachings. It is divided into 13 books.
+
+    Books one to six deal with plane geometry.
+    Books seven to nine deal with number theory
+    Book eight is on geometrical progression
+    Book ten deals with irrational numbers and
+    Books eleven to thirteen deal with three-dimensional geometry.
