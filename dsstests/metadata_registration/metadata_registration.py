@@ -30,6 +30,8 @@ class XmlMetadata(object):
         - logger: a logging service to retrieve some logs to parent script
     '''
 
+    cfg = None
+
     USERNAME    = ''
     PASSWORD    = ''
     ENVIRONMENT = ''
@@ -40,13 +42,13 @@ class XmlMetadata(object):
     @classmethod
     def setup(cls, cfgFile=None):
         # reading cfg file
-        cfg = ConfigParser.ConfigParser()
-        cfg.read(cfgFile) #'easTest.cfg')
-        cls.USERNAME    = cfg.get('testValues', 'username')
-        cls.PASSWORD    = cfg.get('testValues', 'password')
-        cls.ENVIRONMENT = cfg.get('testValues', 'environment')
-        cls.PROJECT     = cfg.get('testValues', 'project')
-        cls.SDC         = cfg.get('testValues', 'sdc')
+        cls.cfg = ConfigParser.ConfigParser()
+        cls.cfg.read(cfgFile) #'easTest.cfg')
+        cls.USERNAME    = cls.cfg.get('testValues', 'username')
+        cls.PASSWORD    = cls.cfg.get('testValues', 'password')
+        cls.ENVIRONMENT = cls.cfg.get('testValues', 'environment')
+        cls.PROJECT     = cls.cfg.get('testValues', 'project')
+        cls.SDC         = cls.cfg.get('testValues', 'sdc')
         cls.LOGGER      = logging.getLogger("masterLogger.xmlHandling")
 
     def __init__(self, path, filename, cfgfile):

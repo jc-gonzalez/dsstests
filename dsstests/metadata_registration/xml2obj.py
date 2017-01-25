@@ -1,5 +1,7 @@
-from .element import Element
 from xml.parsers import expat
+
+from dsstests.metadata_registration.element import Element
+
 
 class Xml2Object(object):
 

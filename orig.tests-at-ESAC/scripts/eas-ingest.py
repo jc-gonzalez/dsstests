@@ -33,7 +33,7 @@ def main():
     now_datetime = datetime.datetime.now().strftime("%Y%m%dT%H%M%S")
     log_file = open("./log/meta/%s.log" % now_datetime, "w")
 
-    url_parts = args.server.split('://');
+    url_parts = args.server.split('://')
     addr_parts = url_parts[1].split(':')
 
     # Generate server URI (orig: https://easdps02.esac.esa.int:8002)

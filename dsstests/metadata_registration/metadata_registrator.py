@@ -9,88 +9,80 @@ Original code: A. N. Belikov
 Last update: 2017-01-24
 """
 
-import traceback, sys
+import json
+import datetime
+import xmlrpclib
 
-from .data_ingestion import Data_IO, Operation_DSS_Table, messageIAL
-
-class Data_Ingestor(object):
-    def __init__(self, args):
+class Metadata_Registrator(object):
+    def __init__(self, args, cfgFile):
         self.args = args
+        self.cfgFile = cfgFile
+        with open(cfgFile, 'r') as f:
+            self.config = json.load(f)
 
     def operate(self):
-        server = args.server
-        url_parts = args.server.split('://')
+        server = None
+        if self.args.server:
+            server = self.args.server
+        else:
+            if self.args.sdc and self.args.environment:
+                self.args.server = self.config['servers']['ingest_server'][self.args.environment][self.args.sdc]
+                server = self.args.server
+            else:
+                print "ERROR: Either SDC+Environment or a Server must be specified"
+                exit(2)
+
+        url_parts = server.split('://')
+        addr_parts = url_parts[1].split(':')
 
         # Generate server URI (orig: https://easdps02.esac.esa.int:8002)
         eas = {'protocol': url_parts[0],
                'addr': addr_parts[0],
                'port': addr_parts[1],
-               'user': args.user,
-               'pwd': args.passwd}
+               'user': self.args.user,
+               'pwd': self.args.passwd}
         eas_uri = "%s://%s:%s@%s:%s" % (eas['protocol'], eas['user'], eas['pwd'], eas['addr'], eas['port'])
 
-        if self.args.operation not in Operation_DSS_Table.keys():
-            raise Exception, 'Unknown operation "{}"'.format(self.args.operation)
+        now_datetime = datetime.datetime.now().strftime("%Y%m%dT%H%M%S")
 
-        op = Operation_DSS_Table[self.args.operation]
-
-        nonfile_operations = ['ping', 'dsstestget', 'dsstestnetwork', 'dsstestconnection']
-        is_file_operation = op not in nonfile_operations
-
-        if is_file_operation and not self.args.file:
-            raise Exception, 'Need filename'
-
-        if self.args.server.find("://") > -1:
-            (protocol, server) = self.args.server.split("://")
-            self.args.secure = (protocol == 'https')
-            self.args.server = server
-
-        ds_connect = Data_IO(self.args.server,
-                             debug=self.args.debug,
-                             secure=self.args.secure,
-                             certfile=self.args.certfile,
-                             timeout=self.args.timeout,
-                             looptime=self.args.looptime,
-                             logfile=self.args.logfile)
-        errormes=''
-        self.argsfd=''
-
-        try:
-            if self.args.file:
-                fd = None
-                if self.argsfd:
-                    fd = open(self.argsfd, 'w')
-                if self.args.query:
-                    result = getattr(ds_connect, op)(self.args.file,
-                                                     savepath=self.args.local,
-                                                     query=self.args.query,
-                                                     username=self.args.user,
-                                                     password=self.args.passwd,
-                                                     fd=fd)
-                else:
-                    result = getattr(ds_connect, op)(self.args.file,
-                                                     savepath=self.args.local,
-                                                     username=self.args.user,
-                                                     password=self.args.passwd,
-                                                     fd=fd)
-            elif self.args.operation in ['ping']:
-                result = getattr(ds_connect, op)()
-            else:
-                result = getattr(ds_connect, op)(username=self.args.user,
-                                                 password=self.args.passwd)
-        except Exception, errmes:
-            errormes = str(errmes)
-            if ds_connect.response:
-                errormes += ' DSS Server message:'
-                errormes += str(ds_connect.response.reason)
-            result = None
-            traceback.print_tb(sys.exc_info()[2])
-
-        if errormes:
-            # Message("operation %s failure!  Reason: %s" %(self.args.operation, errmes))
-            messageIAL(self.args.operation, self.args.file, self.args.local, False, errormes)
+        log_file = None
+        if self.args.logfile:
+            # Generate automatic log file name
+            log_file = open(self.args.logfile, "w")
+            log_file.write("%s: Creating connection to %s://%s:%s\n" % (now_datetime, eas['protocol'], eas['addr'], eas['port']))
         else:
-            # Message("operation %s success!  Result: %s" %(self.args.operation, result))
-            if self.args.operation in ['dsstestnetwork', 'dsstestconnection', 'make_local_asy']:
-                errormes=result
-            messageIAL(self.args.operation, self.args.file, self.args.local, True, errormes)
+            print "%s: Creating connection to %s://%s:%s\n" % (now_datetime, eas['protocol'], eas['addr'], eas['port'])
+
+        client = xmlrpclib.ServerProxy(eas_uri)
+
+        # Read metadata file name to send
+        with open(self.args.metafile, "r") as handle:
+            file_content = handle.read()
+
+        # Ingest file (content) into server
+        if log_file:
+            log_file.write("Ingesting %s (%d bytes)\n" % (self.args.metafile, len(file_content)))
+        else:
+            print "Ingesting %s (%d bytes)\n" % (self.args.metafile, len(file_content))
+
+        res = client.IngestObject(file_content, 'TEST', True)  #, 1)
+
+        # Check ingestion
+        if res['result'].find("ok") == -1:
+            if log_file:
+                log_file.write("ERROR: %s\n" % res['error'])
+                log_file.close()
+            print res['error']
+            exit(2)
+
+        if log_file:
+            log_file.write("Times: fileload=%f database=%f datamodel=%f ingest=%f total=%f\n"
+                           % (res['fileload_time'], res['database_time'], res['datamodel_time'],
+                          res['ingest_time'], res['total_time']))
+            log_file.close()
+        else:
+            print "Times: fileload=%f database=%f datamodel=%f ingest=%f total=%f\n" % (res['fileload_time'],
+                                                                                        res['database_time'],
+                                                                                        res['datamodel_time'],
+                                                                                        res['ingest_time'],
+                                                                                        res['total_time'])

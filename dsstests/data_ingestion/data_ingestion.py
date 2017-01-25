@@ -5,17 +5,23 @@ __comment__     = 'Modifications to original code by J. C. Gonzalez'
 __version__     = "@(#)$Revision $"
 __last_update__ = '2017-01-23'
 
-import httplib, os, hashlib, pickle, socket, stat, string, sys, time
-import urllib, urlparse, uuid
-import random, ssl, traceback
-import xmlrpclib, codecs
-#import errno, signal
-#import asyncore, fnmatch, datetime
-
-#from xml.sax.saxutils import escape
-#from pdb import set_trace as breakpoint
-
-from dsstests.data_ingestion.xml2obj import Xml2Object
+import codecs
+import hashlib
+import httplib
+import json
+import os
+import pickle
+import random
+import socket
+import ssl
+import stat
+import string
+import time
+import traceback
+import urllib
+import urlparse
+import uuid
+import xmlrpclib
 
 try:
     from globals import VT
@@ -38,66 +44,18 @@ except:
         print('gpgencrypt: No gpgencryption possible!')
         return True
 
+Config          = None
 
-DSSserver_current = {
-              'SDC-NL':'application14.target.rug.nl:8008',
-              'SDC-FR':'',
-              'SDC-IT':'',
-              }
-DSSserver_test = {
-              'SDC-NL':'application14.target.rug.nl:18443',
-              'SOC':'euclidsoc.esac.esa.int:443',
-              'SDC-FR':'',
-              'SDC-IT':'',
-              }
-DSSserver_dev = {
-              'SDC-NL':'application11.target.rug.nl:18443',
-              'SDC-FR':'',
-              'SDC-IT':'',
-              }
+SDC_default     = 'SDC'
 
-DSSserver_pip = {
-              'SDC-NL':'application11.target.rug.nl:18443',
-              'SDC-FR':'cceuclidial.in2p3.fr:8008',
-              'SDC-IT':'140.105.72.210:443',
-              }
+DSSserver       = {}
 
-DSSserver={
-           'current':DSSserver_current,
-           'test':DSSserver_test,
-           'dev':DSSserver_dev,
-           'pip':DSSserver_pip,
-           }
+Compressed_Exts = ['']
+Compressors     = {'': ''}
+Decompressors   = {'': ''}
 
-Ingestserver = {
-                 'current':'https://%s:%s@eas-dps-mis.euclid.astro.rug.nl',
-                 'test':'https://%s:%s@eas-dps-mis.test.euclid.astro.rug.nl',
-                 'dev':'https://%s:%s@eas-dps-mis.dev.euclid.astro.rug.nl',
-                 'pip':'https://%s:%s@eas-dps-mis.pip.euclid.astro.rug.nl',
-                 }
-
-Cusserver = {
-                 'current':'http://eas-dps-cus.euclid.astro.rug.nl',
-                 'test':'http://eas-dps-cus.test.euclid.astro.rug.nl',
-                 'dev':'http://eas-dps-cus.dev.euclid.astro.rug.nl',
-                 'pip':'http://eas-dps-cus.pip.euclid.astro.rug.nl',
-                 }
-
-Compressed_Exts = [
-    '',                             # extensions for decompressed,
-    '.gz',                          # gzip compressed
-    '.bz2',                         # and bzip2 compressed
-]
-Compressors = {
-    '':         '',
-    '.gz'  :     'gzip --to-stdout --no-name ',
-    '.bz2' :     'bzip2 --stdout --compress ',
-}
-Decompressors = {
-    '':         '',
-    '.gz'  :     'gzip --to-stdout --decompress ',
-    '.bz2' :     'bzip2 --stdout --decompress ',
-}
+Ingestserver    = {}
+Cusserver       = {}
 
 MapAction={
     'DSSGET'            : 'GET',
@@ -185,10 +143,12 @@ Operation_DSS_Table = {
     'dsstestconnection' : 'dsstestconnection',
 }
 
+
 # Trick(y)
 if (not hasattr(os.path, 'sep')):
     os.path.sep = '/'
     print('Warning: Use at least python version 2.3')
+
 
 class Data_IO:
     '''Class to provide data transfer between the server and client.
@@ -211,7 +171,11 @@ class Data_IO:
         if self.status and self.textbuf:
             for text in self.textbuf: Message('DATA_IO: '+text)
 
-    def __init__(self, host, port=None, store_host=None, store_port=None, debug=0, timeout=None, data_path='', user_id='', sleep=30.0, dstid='', secure=True, certfile='',looptime=1.0,logfile='',nocert=False):
+    def __init__(self, host, port=None, store_host=None, store_port=None, debug=0,
+                 timeout=None, data_path='', user_id='', sleep=30.0, dstid='',
+                 secure=True, certfile='',looptime=1.0,logfile='',nocert=False,
+                 cfgfile=None):
+        self.use_config_file(cfgfile)
         self.textbuf = []
         self._host = ''
         self._port = 0
@@ -303,6 +267,22 @@ class Data_IO:
         self.loop_time=looptime
         self.logfile=logfile
         self.nocert=nocert
+
+    def use_config_file(self, cfgFile):
+        with open(cfgFile, 'r') as f:
+            Config = json.load(f)
+        DSSserver = Config['servers']['dss_server']
+        SDC_default = Config['defaults']['sdc']
+        for key, val in Config['compression']:
+            Compressed_Exts.append(key)
+            Compressors[key] = val['compressor']
+            Decompressors[key] = val['decompressor']
+        for key, val in Config['ingest_server']:
+            url_parts = val[SDC_default].split('https://')
+            Ingestserver[key] = url_parts[0] + "%s:%s@" + url_parts[1]
+        for key, val in Config['cus_server']:
+            Cusserver[key] = val[SDC_default]
+
 
     def _set_data_path(self, data_path=None):
         if not data_path and 'data_path' in Env.keys() and Env['data_path']:
@@ -1833,19 +1813,19 @@ def messageIAL(command,filename,localfilename,exitcode,errormessage):
     Message(message)
     return
 
-def load_xml_file(inp_path):
-    if os.path.exists(inp_path):
-        tmp_el=Xml2Object().Parse(inp_path)
-        filename_els=[]
-        filename=[]
-        tmp_el.getAllElements(filename_els,name='FileName')
-        for i in filename_els:
-            filename.append(i.getData())
-        return filename
-    else:
-        Message('No input XML file %s' % inp_path)
-        sys.exit()
-    return []
+# def load_xml_file(inp_path):
+#     if os.path.exists(inp_path):
+#         tmp_el=Xml2Object().Parse(inp_path)
+#         filename_els=[]
+#         filename=[]
+#         tmp_el.getAllElements(filename_els,name='FileName')
+#         for i in filename_els:
+#             filename.append(i.getData())
+#         return filename
+#     else:
+#         Message('No input XML file %s' % inp_path)
+#         sys.exit()
+#     return []
 
 def connect_string(input_string):
     if input_string.find("http://")>-1:
@@ -1884,7 +1864,7 @@ def store_datafile(path, localpath=None, ec_environment=None, SDC=None, username
         return False
 
     try:
-        dss_server=DSSserver[ec_environment][SDC]
+        dss_server = DSSserver[ec_environment][SDC]
     except:
         Message('Can not find DSS server in settings for  --environment=%s --SDC=%s' % (ec_environment,SDC))
         return False
