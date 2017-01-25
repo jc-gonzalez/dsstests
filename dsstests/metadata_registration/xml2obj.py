@@ -1,4 +1,4 @@
-from dsstests.data_ingestion.element import Element
+from .element import Element
 from xml.parsers import expat
 
 class Xml2Object(object):
@@ -55,4 +55,3 @@ class Xml2Object(object):
                 xml = xml.decode(self.encoding)
         ParserStatus = Parser.Parse(xml, 1)
         return self.root
-
